@@ -138,6 +138,7 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Builder.h" />
     <ClInclude Include="Filler.h" />
     <ClInclude Include="Generator.h" />
     <ClInclude Include="OneToNineGenerator.h" />
@@ -145,6 +146,7 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Builder.cpp" />
     <ClCompile Include="Filler.cpp" />
     <ClCompile Include="Generator.cpp" />
     <ClCompile Include="OneToNineGenerator.cpp" />
