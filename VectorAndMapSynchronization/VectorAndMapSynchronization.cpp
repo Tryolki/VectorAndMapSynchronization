@@ -4,13 +4,15 @@
 #include "stdafx.h"
 #include "Builder.h"
 #include "Synchronizer.h"
-
+#include "Deleter.h"
 int main()
 {
 	Builder builder(100);
-	auto suncVector = builder.GenerateFillVector();
-	auto suncMap = builder.GenerateFillMap();
-	Synchronizer().Synchronize(suncVector, suncMap);
+	auto sync_vector = builder.GenerateFillVector();
+	auto sync_map = builder.GenerateFillMap();
+	Deleter().DeleteRandomElementsFromVector(sync_vector);
+	Deleter().DeleteRandomElementsFromMap(sync_map);
+	Synchronizer().Synchronize(sync_vector, sync_map);
     return 0;
 }
 

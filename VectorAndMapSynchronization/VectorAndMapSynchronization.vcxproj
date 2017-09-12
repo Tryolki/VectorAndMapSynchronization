@@ -139,18 +139,18 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Builder.h" />
+    <ClInclude Include="Deleter.h" />
     <ClInclude Include="Filler.h" />
     <ClInclude Include="Generator.h" />
-    <ClInclude Include="OneToNineGenerator.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="Synchronizer.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Builder.cpp" />
+    <ClCompile Include="Deleter.cpp" />
     <ClCompile Include="Filler.cpp" />
     <ClCompile Include="Generator.cpp" />
-    <ClCompile Include="OneToNineGenerator.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

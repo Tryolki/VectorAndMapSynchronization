@@ -1,8 +1,10 @@
 #pragma once
+#include <stdlib.h> 
+
 class Generator
 {
 public:
-	virtual size_t GenerateValue() = 0;
+	static size_t GenerateRandomValue(size_t range);
 
 };
 
