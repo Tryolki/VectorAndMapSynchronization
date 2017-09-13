@@ -39,6 +39,12 @@
     <ClInclude Include="Deleter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="DeleterWithPreservationOfOrder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DeleterWithoutPreservationOfOrder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -59,7 +65,10 @@
     <ClCompile Include="Synchronizer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Deleter.cpp">
+    <ClCompile Include="DeleterWithPreservationOfOrder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DeleterWithoutPreservationOfOrder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

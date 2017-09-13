@@ -140,6 +140,8 @@
   <ItemGroup>
     <ClInclude Include="Builder.h" />
     <ClInclude Include="Deleter.h" />
+    <ClInclude Include="DeleterWithoutPreservationOfOrder.h" />
+    <ClInclude Include="DeleterWithPreservationOfOrder.h" />
     <ClInclude Include="Filler.h" />
     <ClInclude Include="Generator.h" />
     <ClInclude Include="stdafx.h" />
@@ -148,7 +150,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Builder.cpp" />
-    <ClCompile Include="Deleter.cpp" />
+    <ClCompile Include="DeleterWithoutPreservationOfOrder.cpp" />
+    <ClCompile Include="DeleterWithPreservationOfOrder.cpp" />
     <ClCompile Include="Filler.cpp" />
     <ClCompile Include="Generator.cpp" />
     <ClCompile Include="stdafx.cpp">

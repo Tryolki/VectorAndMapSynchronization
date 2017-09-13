@@ -1,12 +1,10 @@
 #pragma once
 #include "Generator.h"
-#include <vector>
-#include <map>
 class Deleter
 {
 public:
-	static void DeleteRandomElementsFromVector(std::vector<int>& container);
-	static void DeleteRandomElementsFromMap(std::map<int,int>& container);
-
+	virtual void DeleteRandomElementsFromVector(std::vector<int>& container) = 0;
+	virtual void DeleteRandomElementsFromMap(std::map<int,int>& container) = 0;
+	size_t max_elements_for_deletion = 15;
 };
 
