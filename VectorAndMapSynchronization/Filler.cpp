@@ -3,17 +3,17 @@
 
 void Filler::FillVector(std::vector<int>& fillingVector)
 {
-	for (auto elemPos = 0; elemPos < elementsCount; elemPos++)
+	for (auto elemPos = 0; elemPos < elements_count; elemPos++)
 	{
-		fillingVector.push_back(generator.GenerateValue());
+		fillingVector.push_back(Generator().GenerateRandomValue(max_value)+1);
 	}
 }
 
 void Filler::FillMap(std::map<int, int>& fillingMap)
 {
-	for (auto elemPos = 0; elemPos < elementsCount; elemPos++)
+	for (auto elemPos = 0; elemPos < elements_count; elemPos++)
 	{
-		fillingMap.emplace(elemPos, generator.GenerateValue());
+		fillingMap[elemPos] = Generator().GenerateRandomValue(max_value)+1;
 	}
 }
 

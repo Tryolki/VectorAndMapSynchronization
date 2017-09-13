@@ -3,16 +3,11 @@
 
 Builder::Builder(size_t elementsCount)
 {
-	generator = new OneToNineGenerator();
-	filler = new Filler(*generator, elementsCount);
+	filler = new Filler(elementsCount);
 }
 
 Builder::~Builder()
 {
-	if(!generator)
-	{
-		delete generator;
-	}
 	if (!filler)
 	{
 		delete filler;

@@ -27,9 +27,6 @@
     <ClInclude Include="Generator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="OneToNineGenerator.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Filler.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -37,6 +34,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Synchronizer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Deleter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DeleterWithPreservationOfOrder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DeleterWithoutPreservationOfOrder.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -50,9 +56,6 @@
     <ClCompile Include="Generator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="OneToNineGenerator.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Filler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -60,6 +63,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Synchronizer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DeleterWithPreservationOfOrder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DeleterWithoutPreservationOfOrder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
