@@ -13,6 +13,30 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\Deleter">
+      <UniqueIdentifier>{7bd31b4d-f7e2-4c33-a526-9d85a305f265}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Deleter">
+      <UniqueIdentifier>{1ab79046-019e-4584-8128-457bc3a0be3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Synchonizer">
+      <UniqueIdentifier>{10aab43d-caaa-4501-9f60-78ca030e51b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Synchonizer">
+      <UniqueIdentifier>{aaf914a1-489b-4411-bfcf-0f615b799709}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Factories">
+      <UniqueIdentifier>{6f6f6711-eef5-48bf-8d11-b4b44574d78c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Factories">
+      <UniqueIdentifier>{6ff55c0b-bd78-4806-8c8c-6c66a5247f8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Generator">
+      <UniqueIdentifier>{98292f7b-43aa-41e0-aa0f-b8e486ad3ff5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Generator">
+      <UniqueIdentifier>{0e817f6c-bd03-457e-8a35-895f6e5bb3aa}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -24,26 +48,38 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Generator.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Filler.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Builder.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Synchronizer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Deleter.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="DeleterWithPreservationOfOrder.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Deleter</Filter>
     </ClInclude>
     <ClInclude Include="DeleterWithoutPreservationOfOrder.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Deleter</Filter>
+    </ClInclude>
+    <ClInclude Include="DeleterWithPreservationOfOrder.h">
+      <Filter>Header Files\Deleter</Filter>
+    </ClInclude>
+    <ClInclude Include="Synchronizer.h">
+      <Filter>Header Files\Synchonizer</Filter>
+    </ClInclude>
+    <ClInclude Include="SynchronizerWithPreservation.h">
+      <Filter>Header Files\Synchonizer</Filter>
+    </ClInclude>
+    <ClInclude Include="DeleterFactoryObject.h">
+      <Filter>Header Files\Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="Generator.h">
+      <Filter>Header Files\Generator</Filter>
+    </ClInclude>
+    <ClInclude Include="SynchronizerWithoutPreservation.h">
+      <Filter>Header Files\Synchonizer</Filter>
+    </ClInclude>
+    <ClInclude Include="SynchronizerFactory.h">
+      <Filter>Header Files\Factories</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -53,23 +89,32 @@
     <ClCompile Include="VectorAndMapSynchronization.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Generator.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Filler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Builder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Synchronizer.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="DeleterWithoutPreservationOfOrder.cpp">
+      <Filter>Source Files\Deleter</Filter>
     </ClCompile>
     <ClCompile Include="DeleterWithPreservationOfOrder.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Deleter</Filter>
     </ClCompile>
-    <ClCompile Include="DeleterWithoutPreservationOfOrder.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="SynchronizerWithPreservation.cpp">
+      <Filter>Source Files\Synchonizer</Filter>
+    </ClCompile>
+    <ClCompile Include="SynchronizerWithoutPreservation.cpp">
+      <Filter>Source Files\Synchonizer</Filter>
+    </ClCompile>
+    <ClCompile Include="DeleterFactoryObject.cpp">
+      <Filter>Source Files\Factories</Filter>
+    </ClCompile>
+    <ClCompile Include="Generator.cpp">
+      <Filter>Source Files\Generator</Filter>
+    </ClCompile>
+    <ClCompile Include="SynchronizerFactory.cpp">
+      <Filter>Source Files\Factories</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
