@@ -5,7 +5,7 @@
 class SynchronizerWithoutPreservation : public Synchronizer
 {
 public:
-	SynchronizerWithoutPreservation(std::vector<int>vec, std::map<int, int> map) : Synchronizer(vec, map) {}
-	void Synchronize() override;
+	void Synchronize(std::vector<int>& vector_for_synchronization,
+		std::map<int, int>& map_for_synchronization) override;
 };
 

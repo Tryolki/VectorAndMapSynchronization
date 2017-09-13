@@ -1,35 +1,31 @@
 #include "stdafx.h"
 #include "Builder.h"
+#include <ctime>
 
 Builder::Builder(size_t elementsCount, std::string type)
 {
 	sync_type = type;
 	filler = new Filler(elementsCount);
-	deleter = DeleterFactoryObject::GenerateObject(sync_type);
 	generator = new Generator();
+	srand(time(NULL));
+
 }
 
-Synchronizer * Builder::BuildObject()
+void Builder::BuildObject()
 {
-	try
-	{
-		auto sync_vector = GenerateFillVector();
-		auto sync_map = GenerateFillMap();
-		if (!deleter)
-			throw new std::invalid_argument("Incorrect type");
-		deleter->DeleteRandomElementsFromVector(sync_vector);
-		deleter->DeleteRandomElementsFromMap(sync_map);
-		auto sync_object = SynchronizerFactory::GenerateObject(sync_type, sync_vector, sync_map);
-		if (!sync_object)
-			throw new std::invalid_argument("Incorrect type");
-		return sync_object;
-	}
-	catch (const std::invalid_argument& e)
-	{
+	vector_for_synchronization = GenerateFillVector();
+	map_for_synchronization = GenerateFillMap();
+	deleter = DeleterFactoryObject::GenerateObject(sync_type);
+	if (!deleter)
+		throw new std::invalid_argument("Incorrect type");
+	deleter->DeleteRandomElementsFromVector(vector_for_synchronization);
+	deleter->DeleteRandomElementsFromMap(map_for_synchronization);
+	synchronizer = SynchronizerFactory::Synchronize(sync_type);
+}
 
-	}
-
-
+void Builder::Synchronize()
+{
+	synchronizer->Synchronize(vector_for_synchronization, map_for_synchronization);
 }
 
 Builder::~Builder()
@@ -45,6 +41,10 @@ Builder::~Builder()
 	if (!generator)
 	{
 		delete generator;
+	}
+	if (!synchronizer)
+	{
+		delete synchronizer;
 	}
 }
 

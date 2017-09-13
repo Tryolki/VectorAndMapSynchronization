@@ -1,18 +1,17 @@
 #include "stdafx.h"
 #include "SynchronizerFactory.h"
 
-Synchronizer * SynchronizerFactory::GenerateObject(
-	std::string type, 
-	std::vector<int>vec, 
-	std::map<int, int> map)
+Synchronizer * SynchronizerFactory::Synchronize(
+	const std::string type)
 {
 	if (type == "With")
 	{
-		return new SynchronizerWithPreservation(vec, map);
+		return new SynchronizerWithPreservation();
 	}
 	if (type == "Without")
 	{
-		return new SynchronizerWithoutPreservation(vec, map);
+		return new SynchronizerWithoutPreservation();
 	}
 	return nullptr;
 }
+

@@ -5,8 +5,6 @@
 static class SynchronizerFactory
 {
 public:
-	static Synchronizer* GenerateObject(std::string type, 
-		std::vector<int>vec, 
-		std::map<int, int> map);
+	static Synchronizer * Synchronize(std::string type);
 };
 
