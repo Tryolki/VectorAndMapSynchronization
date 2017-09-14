@@ -53,7 +53,6 @@ void Synchronization()
 	std::cin >> type;
 	Builder builder(elements_count, type);
 	builder.BuildObject();
-	builder.Synchronize();
 	auto sync_map = builder.GetMap();
 	auto sync_vec = builder.GetVector();
 }

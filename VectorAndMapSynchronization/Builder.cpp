@@ -21,6 +21,7 @@ void Builder::BuildObject()
 	deleter->DeleteRandomElementsFromVector(vector_for_synchronization);
 	deleter->DeleteRandomElementsFromMap(map_for_synchronization);
 	synchronizer = SynchronizerFactory::Synchronize(sync_type);
+	Synchronize();
 }
 
 void Builder::Synchronize()
